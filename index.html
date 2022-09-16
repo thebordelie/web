@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1 Лабораторная работа </title>
+<!--    <link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <style>
+        .header{
+            color: #000;
+            font-family: fantasy;
+            font-size: 36px;
+            -webkit-text-stroke: 1px #ffe9b3;
+
+        }
+
+        .info{
+            font-size: 	150%;
+            -webkit-text-stroke: 1px #fff;
+            margin	: 20%;
+
+        }
+        .image{
+            border-radius: 20px;
+            border: 5px #ffe9b3 solid;
+            box-shadow: 10px 0 20px #ffdc74;
+            padding: 3%;
+        }
+        .btn{
+            border-radius: 	15%;
+            box-shadow: 10px 0 20px darkred;
+            color: #ffdc74;
+            border: 5px #ffe9b3 solid;
+            background-color: black;
+            background-size: 50%;
+            font-size: 	150%;
+        }
+        body{
+            background-image: url("img/img2.jpg");
+            color: #ffdc74;
+        }
+        table{
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+        span > p{
+            margin: 1%;
+        }
+        input{
+            background-image: linear-gradient(to right,orange,yellow,red);
+        }
+
+        input:valid{
+            border: 2px solid black;
+            color: white;
+            box-shadow: 0 0 5px 1px black;
+        }
+        input[type="text"]::-webkit-input-placeholder {
+            color: #fff;
+        }
+        input[type="text"]::-moz-placeholder {
+            color: #fff;
+        }
+        .infoOfRequest{
+            color: white;
+            font-size: 150%;
+            -webkit-text-stroke: 2px black ;
+            font-family: fantasy;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+
+<table border="1" cellpadding="0" cellspacing="0" width="100%" id="table">
+    <tr>
+        <th class="header" colspan="4" class="info">
+            <span>Керпик Артём Витальевич P3112 <p class="option">Вариант№1214</p></span>
+        </th>
+    </tr>
+    <form id="js-form" name="form">
+        <tr>
+            <td width="20%" align="center" valign="top">
+                <p><label class="info">Изменение X:</label></p>
+                <span class="js-input">
+					<p>
+						<input type="radio" name="choice-X" class="input-X" value="-4">-4
+						<input type="radio" name="choice-X" class="input-X" value="-3">-3
+						<input type="radio" name="choice-X" class="input-X" value="-2">-2
+						<input type="radio" name="choice-X" class="input-X" value="-1">-1
+					</p>
+					<input type="radio" name="choice-X" class="input-X" value="0">0
+					<p>
+						<input type="radio" name="choice-X" class="input-X" value="1"> 1
+						<input type="radio" name="choice-X" class="input-X" value="2"> 2
+						<input type="radio" name="choice-X" class="input-X" value="3"> 3
+						<input type="radio" name="choice-X" class="input-X" value="4"> 4
+					</p>
+				</span>
+            </td>
+            <td width="20%" align="center" valign="top">
+                <p><label class="info">Изменение Y:</label></p>
+                <input type="text" name="choice-Y" placeholder="{-5..5}" id="input-Y" maxlength="10">
+            </td>
+            <td width="20%" align="center" valign="top">
+				<span class="js-input ">
+					<p><label class="info">Изменение R:</label></p>
+					<select id="input-R" name="choice-R">
+						<option value="0">Выберете R</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</span>
+
+            </td>
+
+            <td width="40%" align="center">
+                <img src="img/imgCoordinates.png" alt="Изображение не найдено" class="image">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <button class="btn" type="submit">
+                    Проверить
+                </button>
+
+
+            </td>
+        </tr>
+    </form>
+
+    <tr align="center" class="infoOfRequest">
+        <td width="10%">
+            Запрос
+        </td>
+        <td width="10%">
+            X
+            Y
+            R
+        </td>
+        <td width="20%">
+            Время
+        </td>
+        <td>
+            Результат и Время работы скрипта
+        </td>
+    </tr>
+</table>
+<script src="js/script.js"></script>
+</body>
+</html>
